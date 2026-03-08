@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+}
+body{
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+.lead{
+    background-color: blue;
+    color: white;
+    height:5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    display: flex;
+    justify-content:center;
+    gap:50px;
+    margin-top :100px;
+    margin-bottom:100px;
+    border-radius: 50%;
+    
+}
+.rock,.paper,.scissor{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border:2px solid white;
+}
+.rock:hover,.paper:hover,.scissor:hover{
+    cursor: pointer;
+    opacity: 0.75;
+    border:3px solid blue;
+}
+.scoreboard{
+    display: flex;
+    align-content: center;
+    gap :60px;
+    justify-content:center;
+}
+.user,.comp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:30px;
+}
+.start{
+    height:50px;
+    padding:10px 20px;
+    width:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    margin: auto;
+}
+.reset{
+    margin:auto;
+    padding:10px 20px;
+    background-color:black;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.reset:hover{
+    background-color:#333;
+}
